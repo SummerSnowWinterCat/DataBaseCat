@@ -6,14 +6,13 @@
 from database_service.database_pool import get_connection, DataBaseConnectionPool
 
 
-def insert_some_thing():
-    connection = get_connection()
+def create_table():
     sql = '''
     CREATE TABLE IF NOT EXISTS sys(ID INT PRIMARY KEY AUTO_INCREMENT,message VARCHAR(50))
     '''
 
-    return connection.insert_or_create(sql)
+    return get_connection().add_data(sql=sql)
 
 
 if __name__ == '__main__':
-    print(insert_some_thing())
+    print(create_table())

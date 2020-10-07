@@ -4,12 +4,12 @@
 # @File : config.py
 # @Email:summersnowwintercat@gmail.com
 
-#DB_CREATOR = 'pymysql'
-DB_HOST = ''
+# DB_CREATOR = 'pymysql'
+DB_HOST = 'IP ADDRESS'
 DB_POST = 3306
-DB_NAME = ''
-DB_USER = ''
-DB_PASSWORD = ''
+DB_NAME = 'DB_NAME'
+DB_USER = 'USERNAME'
+DB_PASSWORD = 'PASSWORD'
 
 # encode
 DB_CHARSET = 'utf8'
@@ -21,11 +21,11 @@ DB_MAX_CACHED = 10
 DB_MAX_CONNECTIONS = 60
 #
 DB_MAX_SHARED = 20
-
+#
 DB_BLOCKING = True
-
+#
 DB_MAX_USAGE = None
-
+#
 DB_SET_SESSION = []
-
+#
 DB_PING = 0
