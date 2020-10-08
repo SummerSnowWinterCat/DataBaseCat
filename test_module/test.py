@@ -3,7 +3,7 @@
 # @Author: WinterCat
 # @File : test.py
 # @Email:summersnowwintercat@gmail.com
-from database_service.database_pool import get_connection, DataBaseConnectionPool
+from database_service.database_pool import add_data, search_data
 
 
 def create_table():
@@ -11,7 +11,7 @@ def create_table():
     CREATE TABLE IF NOT EXISTS sys(ID INT PRIMARY KEY AUTO_INCREMENT,message VARCHAR(50))
     '''
 
-    return get_connection().add_data(sql=sql)
+    return add_data(query=sql)
 
 
 if __name__ == '__main__':
