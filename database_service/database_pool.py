@@ -53,7 +53,7 @@ def search_data(query):
 
 
 # insert data by query
-def add_data(query):
+def update_data(query):
     connection = DataBaseConnectionPool()
     connection.cur.execute(query)
     return connection.conn.commit()

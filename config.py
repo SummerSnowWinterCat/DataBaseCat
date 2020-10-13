@@ -16,7 +16,7 @@ DB_CHARSET = 'utf8mb4'
 # free cached min
 DB_MIN_CACHED = 10
 # free cached max
-DB_MAX_CACHED = 20
+DB_MAX_CACHED = 22
 #  pools create max
 DB_MAX_CONNECTIONS = 100
 #  share pool max
